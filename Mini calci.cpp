@@ -1,32 +1,33 @@
 #include<iostream>
+using namespace std;
 int main()
 {
     char op;
-    std::cout<<"Choose your operator +,-,*,/: ";
-    std::cin>>op;
+    cout<<"Choose your operator +,-,*,/: ";
+    cin>>op;
     float a,b,sum,sub,product,quotient;
-    std::cout<<"Enter the value of a and b: ";
-    std::cin>>a>>b;
+    cout<<"Enter the value of a and b: ";
+    cin>>a>>b;
     switch (op)
     {
         case '+':
         sum=a+b;
-        std::cout<<"Sum: "<<sum;
+        cout<<"Sum: "<<sum;
         break;
         case '-':
         sub=a-b;
-        std::cout<<"Sub: "<<sub;
+        cout<<"Sub: "<<sub;
         break;
         case '*':
         product=a*b;
-        std::cout<<"Product: "<<product;
+        cout<<"Product: "<<product;
         break;
         case '/':
         quotient=a/b;
-        std::cout<<"Quotient: "<<quotient;
+        cout<<"Quotient: "<<quotient;
         break;
         default:
-        std::cout<<"Enter a vaild operator";
+        cout<<"Enter a vaild operator";
         break;
     }
 }
